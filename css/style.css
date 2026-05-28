@@ -1,0 +1,42 @@
+/* Animación hover en las tarjetas */
+.producto-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.producto-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Botón animado */
+.btn-animar {
+  transition: background-color 0.3s, transform 0.2s;
+}
+.btn-animar:hover {
+  background-color: #ff4d6d;
+  transform: translateY(-3px);
+}
+
+/* Imagen historia con efecto */
+.historia-img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.historia-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Tarjetas misión */
+.mision-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mision-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Animación para inputs */
+input:focus, textarea:focus {
+  border-color: #ff4d6d;
+  box-shadow: 0 0 8px rgba(255,77,109,0.4);
+  transition: 0.3s ease;
+}
