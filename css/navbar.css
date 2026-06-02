@@ -6,7 +6,6 @@
 
 .site-header--page {
   min-height: calc(var(--top-strip-height, 3.75rem) + var(--page-navbar-height, 4rem));
-  background: #54cef8d1;
 }
 
 .top-strip {
