@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/contacto.css">
 	<link rel="stylesheet" href="../css/responsive.css">
 </head>
 <body class="site-page" data-page="contacto">
@@ -39,25 +40,106 @@
 	</header>
 
 	<main>
-		<section class="page-hero section-pad">
+		<section class="contact-section" aria-labelledby="contact-title">
 			<div class="container">
-				<span class="eyebrow">Página base</span>
-				<h1 class="section-title">Sección reservada para el formulario de contacto del equipo.</h1>
-				<p class="page-intro">La navegación y el pie de página ya están listos; el contenido funcional de contacto lo integra su responsable.</p>
+				<div class="contact-heading">
+					<span>Hablemos</span>
+					<h1 id="contact-title">Contacto</h1>
+					<p>Escríbenos para reservas, pedidos especiales o dudas sobre nuestros productos artesanales.</p>
+				</div>
+
+				<div class="contact-grid">
+					<aside class="contact-info" aria-label="Información de Frutty Cream">
+						<div class="contact-info-card">
+							<h2>Dirección</h2>
+							<p>B/ La independencia<br>Mocoa, Putumayo, Colombia</p>
+						</div>
+						<div class="contact-info-card">
+							<h2>Contacto</h2>
+							<p>ysolarte15@hotmail.com<br>Tel: 3137983199</p>
+						</div>
+						<div class="contact-info-card">
+							<h2>Horario</h2>
+							<p>Todos los días<br>10AM-10PM</p>
+						</div>
+						<div class="contact-info-card">
+							<h2>Redes</h2>
+							<p>
+								<a href="https://www.facebook.com/HELADERIAFRUTTYCREAM" target="_blank" rel="noopener">Facebook Frutty Cream</a><br>
+								Heladería artesanal
+							</p>
+						</div>
+					</aside>
+
+					<div class="contact-actions">
+						<form class="contact-form" id="contactForm" novalidate>
+							<h2>Envíanos un mensaje</h2>
+							<div class="row g-3">
+								<div class="col-md-6">
+									<label for="contactName" class="form-label">Nombre completo</label>
+									<input type="text" class="form-control" id="contactName" name="nombre" autocomplete="name" required minlength="3">
+									<div class="invalid-feedback">Escribe tu nombre, mínimo 3 caracteres.</div>
+								</div>
+								<div class="col-md-6">
+									<label for="contactEmail" class="form-label">Correo electrónico</label>
+									<input type="email" class="form-control" id="contactEmail" name="correo" autocomplete="email" required>
+									<div class="invalid-feedback">Ingresa un correo válido.</div>
+								</div>
+								<div class="col-md-6">
+									<label for="contactPhone" class="form-label">Teléfono</label>
+									<input type="tel" class="form-control" id="contactPhone" name="telefono" autocomplete="tel" pattern="[0-9]{10,15}" minlength="10" maxlength="15" required>
+									<div class="invalid-feedback">Ingresa mínimo 10 números.</div>
+								</div>
+								<div class="col-md-6">
+									<label for="contactSubject" class="form-label">Asunto</label>
+									<select class="form-select" id="contactSubject" name="asunto" required>
+										<option value="">Selecciona una opción</option>
+										<option>Pedido especial</option>
+										<option>Reserva familiar</option>
+										<option>Información de productos</option>
+										<option>Otro</option>
+									</select>
+									<div class="invalid-feedback">Selecciona un asunto.</div>
+								</div>
+								<div class="col-12">
+									<label for="contactMessage" class="form-label">Mensaje</label>
+									<textarea class="form-control" id="contactMessage" name="mensaje" rows="5" required minlength="10"></textarea>
+									<div class="invalid-feedback">Cuéntanos tu solicitud con mínimo 10 caracteres.</div>
+								</div>
+							</div>
+							<button class="btn contact-submit" type="submit">Enviar mensaje</button>
+							<p class="contact-status" id="contactStatus" aria-live="polite"></p>
+						</form>
+
+						<form class="newsletter-form" id="newsletterForm" novalidate>
+							<h2>Lista de correos</h2>
+							<p>Recibe promociones, nuevos sabores y noticias dulces de Frutty Cream.</p>
+							<label for="newsletterEmail" class="visually-hidden">Correo para lista de correos</label>
+							<input type="email" class="form-control" id="newsletterEmail" placeholder="Ingresa tu email aquí*" required>
+							<div class="invalid-feedback">Ingresa un correo válido para unirte.</div>
+							<button class="btn newsletter-submit" type="submit">Unirse</button>
+							<p class="contact-status" id="newsletterStatus" aria-live="polite"></p>
+						</form>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>
 
-	<footer class="site-footer">
-		<div class="container py-5">
-			<div class="footer-bottom pt-0 d-flex flex-column flex-md-row justify-content-between gap-2 border-0">
-				<span>© <span data-year></span> Frutty Cream Web</span>
-				<a href="../index.html" class="link-footer">Volver al inicio</a>
-			</div>
+	<a class="whatsapp-float" href="https://wa.me/573133865275?text=Hola%20Frutty%20Cream%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank" rel="noopener" aria-label="Contáctanos por WhatsApp">
+		<img src="../img/Whasapicon.webp" alt="WhatsApp">
+		<span>Contáctanos por WhatsApp</span>
+	</a>
+
+	<footer class="contact-page-footer">
+		<div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+			<span>© <span data-year></span> Frutty Cream Web</span>
+			<a href="../index.html">Volver al inicio</a>
 		</div>
 	</footer>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="../js/form.js"></script>
 	<script src="../js/main.js"></script>
 </body>
 </html>
