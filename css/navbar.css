@@ -65,7 +65,7 @@
   right: 0;
   min-height: var(--page-navbar-height, 4rem);
   padding: .9rem 0;
-  background: #54cef8d1;
+  background: transparent;
   border-bottom: 0;
   box-shadow: none;
   backdrop-filter: none;
