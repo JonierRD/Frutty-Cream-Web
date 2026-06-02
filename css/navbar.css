@@ -6,6 +6,7 @@
 
 .site-header--page {
   min-height: calc(var(--top-strip-height, 3.75rem) + var(--page-navbar-height, 4rem));
+  background: #54cef8d1;
 }
 
 .top-strip {
@@ -65,7 +66,7 @@
   right: 0;
   min-height: var(--page-navbar-height, 4rem);
   padding: .9rem 0;
-  background: #54cef8d1;
+  background: transparent;
   border-bottom: 0;
   box-shadow: none;
   backdrop-filter: none;
