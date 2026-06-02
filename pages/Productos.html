@@ -41,50 +41,319 @@
   <main>
     <section class="products-hero" aria-labelledby="products-hero-title">
       <div class="container">
-        <nav class="products-hero-nav" aria-label="Navegación de productos">
-          <a href="../index.html">Inicio</a>
-          <a href="#menu-productos">Menú</a>
-          <a href="Promociones.html">Eventos</a>
-          <a href="Nosotros.html">Sobre nosotros</a>
-        </nav>
         <div class="products-hero-copy">
           <span>Nuestros</span>
-          <h1 id="products-hero-title">Sabores</h1>
+          <h1 id="products-hero-title">Productos</h1>
+          <p>y sabores</p>
         </div>
       </div>
     </section>
 
-    <section class="container py-5" id="menu-productos">
-      <h2 class="text-center mb-4">Nuestros Helados</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card producto-card shadow-sm">
-            <img src="../img/productos/fresa.jpg" class="card-img-top" alt="Helado de fresa">
-            <div class="card-body text-center">
-              <h5 class="card-title">Helado de Fresa</h5>
-              <p class="card-text">Refrescante y natural con trozos de fruta.</p>
-              <button class="btn btn-danger btn-animar">Comprar</button>
-            </div>
+    <section class="products-catalog section-pad" id="menu-productos" aria-labelledby="products-catalog-title">
+      <div class="container">
+        <div class="products-catalog-heading text-center">
+          <span>Menú artesanal</span>
+          <h2 id="products-catalog-title">Nuestros productos</h2>
+        </div>
+        <div class="products-sortbar">
+          <label for="sort-products">Ordenar productos</label>
+          <select class="form-select" id="sort-products" data-sort-control="products">
+            <option value="default">Orden original</option>
+            <option value="asc">Precio: menor a mayor</option>
+            <option value="desc">Precio: mayor a menor</option>
+          </select>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" data-sort-grid="products">
+          <div class="col">
+            <article class="card producto-card product-menu-card h-100">
+              <img src="../img/productos/Banana Split.webp" class="card-img-top" alt="Banana split con helado y toppings">
+              <div class="card-body">
+                <h3 class="card-title">Banana Split</h3>
+                <p class="card-text">Banano fresco con bolas de helado, salsa dulce, crema y toppings.</p>
+                <p class="product-price">$14.000 COP</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card producto-card product-menu-card h-100">
+              <img src="../img/productos/Coa de frutos rojos.webp" class="card-img-top" alt="Copa de frutos rojos con helado">
+              <div class="card-body">
+                <h3 class="card-title">Copa de frutos rojos</h3>
+                <p class="card-text">Helado cremoso con salsa de frutos rojos y trozos de fruta.</p>
+                <p class="product-price">$12.000 COP</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card producto-card product-menu-card h-100">
+              <img src="../img/productos/Copa Choco.webp" class="card-img-top" alt="Copa de chocolate con helado">
+              <div class="card-body">
+                <h3 class="card-title">Copa Choco</h3>
+                <p class="card-text">Helado con cobertura de chocolate, barquillo y toque crocante.</p>
+                <p class="product-price">$11.000 COP</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card producto-card product-menu-card h-100">
+              <img src="../img/productos/Copa Durazno.webp" class="card-img-top" alt="Copa de durazno con helado">
+              <div class="card-body">
+                <h3 class="card-title">Copa Durazno</h3>
+                <p class="card-text">Helado suave con durazno, crema y salsa dulce de la casa.</p>
+                <p class="product-price">$10.000 COP</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card producto-card product-menu-card h-100">
+              <img src="../img/productos/Copa Fresa.webp" class="card-img-top" alt="Copa de fresa con helado">
+              <div class="card-body">
+                <h3 class="card-title">Copa Fresa</h3>
+                <p class="card-text">Fresas frescas con helado artesanal, crema y salsa frutal.</p>
+                <p class="product-price">$10.000 COP</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card producto-card product-menu-card h-100">
+              <img src="../img/productos/Copa kiwi.webp" class="card-img-top" alt="Copa de kiwi con helado">
+              <div class="card-body">
+                <h3 class="card-title">Copa Kiwi</h3>
+                <p class="card-text">Kiwi fresco con helado, crema suave y contraste cítrico.</p>
+                <p class="product-price">$11.000 COP</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card producto-card product-menu-card h-100">
+              <img src="../img/productos/Copa Yogurt.webp" class="card-img-top" alt="Copa de yogurt con frutas">
+              <div class="card-body">
+                <h3 class="card-title">Copa Yogurt</h3>
+                <p class="card-text">Yogurt cremoso con frutas, helado y toppings seleccionados.</p>
+                <p class="product-price">$12.000 COP</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card producto-card product-menu-card h-100">
+              <img src="../img/productos/Galleta con helado.webp" class="card-img-top" alt="Galleta con helado artesanal">
+              <div class="card-body">
+                <h3 class="card-title">Galleta con helado</h3>
+                <p class="card-text">Galleta dulce acompañada de helado artesanal y salsa especial.</p>
+                <p class="product-price">$9.000 COP</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card producto-card product-menu-card h-100">
+              <img src="../img/productos/Helado Browny.webp" class="card-img-top" alt="Helado brownie con chocolate">
+              <div class="card-body">
+                <h3 class="card-title">Helado Brownie</h3>
+                <p class="card-text">Brownie de chocolate con helado, salsa y topping crocante.</p>
+                <p class="product-price">$13.000 COP</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card producto-card product-menu-card h-100">
+              <img src="../img/productos/Pina Helada.webp" class="card-img-top" alt="Piña helada con frutas">
+              <div class="card-body">
+                <h3 class="card-title">Piña Helada</h3>
+                <p class="card-text">Piña fresca con helado, frutas tropicales y crema suave.</p>
+                <p class="product-price">$12.000 COP</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card producto-card product-menu-card h-100">
+              <img src="../img/productos/Porcion de frutas.webp" class="card-img-top" alt="Porción de frutas frescas">
+              <div class="card-body">
+                <h3 class="card-title">Porción de frutas</h3>
+                <p class="card-text">Selección de frutas frescas para disfrutar algo ligero y natural.</p>
+                <p class="product-price">$8.000 COP</p>
+              </div>
+            </article>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card producto-card shadow-sm">
-            <img src="../img/productos/chocolate.jpg" class="card-img-top" alt="Helado de chocolate">
-            <div class="card-body text-center">
-              <h5 class="card-title">Helado de Chocolate</h5>
-              <p class="card-text">Intenso sabor con cacao premium.</p>
-              <button class="btn btn-danger btn-animar">Comprar</button>
-            </div>
+      </div>
+    </section>
+
+    <section class="icecream-flavors section-pad" aria-labelledby="icecream-flavors-title">
+      <div class="container">
+        <div class="flavors-menu-heading text-center">
+          <h2 id="icecream-flavors-title">Sabores de helado</h2>
+          <p>Elige tu sabor favorito para conos, copas o combinaciones especiales.</p>
+        </div>
+        <div class="products-sortbar">
+          <label for="sort-flavors">Ordenar sabores</label>
+          <select class="form-select" id="sort-flavors" data-sort-control="flavors">
+            <option value="default">Orden original</option>
+            <option value="asc">Precio: menor a mayor</option>
+            <option value="desc">Precio: mayor a menor</option>
+          </select>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" data-sort-grid="flavors">
+          <div class="col">
+            <article class="flavor-menu-card">
+              <img src="../img/productos/Oreo.avif" alt="Helado sabor oreo">
+              <div>
+                <h3>Oreo</h3>
+                <p>Helado cremoso con trozos de galleta y textura crocante.</p>
+                <span>$2.000 COP</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="flavor-menu-card">
+              <img src="../img/productos/Chocolate.avif" alt="Helado sabor chocolate">
+              <div>
+                <h3>Chocolate</h3>
+                <p>Sabor intenso de cacao, ideal para los amantes del chocolate.</p>
+                <span>$2.000 COP</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="flavor-menu-card">
+              <img src="../img/productos/Fresa y vainilla.avif" alt="Helado sabor fresa y vainilla">
+              <div>
+                <h3>Fresa y vainilla</h3>
+                <p>Mezcla suave, frutal y dulce con acabado tradicional.</p>
+                <span>$2.000 COP</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="flavor-menu-card">
+              <img src="../img/productos/Pistacho.avif" alt="Helado sabor pistacho">
+              <div>
+                <h3>Pistacho</h3>
+                <p>Sabor delicado con notas de fruto seco y textura cremosa.</p>
+                <span>$2.500 COP</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="flavor-menu-card">
+              <img src="../img/productos/Queso con Cereza.avif" alt="Helado sabor queso con cereza">
+              <div>
+                <h3>Queso con cereza</h3>
+                <p>Combinación dulce y cremosa con un toque frutal de cereza.</p>
+                <span>$2.500 COP</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="flavor-menu-card">
+              <img src="../img/productos/Chips de chocolate.avif" alt="Helado con chips de chocolate">
+              <div>
+                <h3>Chips de chocolate</h3>
+                <p>Helado suave con pequeños chips para un final crocante.</p>
+                <span>$2.500 COP</span>
+              </div>
+            </article>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card producto-card shadow-sm">
-            <img src="../img/productos/vainilla.jpg" class="card-img-top" alt="Helado de vainilla">
-            <div class="card-body text-center">
-              <h5 class="card-title">Helado de Vainilla</h5>
-              <p class="card-text">Clásico y cremoso con esencia.</p>
-              <button class="btn btn-danger btn-animar">Comprar</button>
-            </div>
+      </div>
+    </section>
+
+    <section class="icecream-flavors lactose-free-flavors section-pad" aria-labelledby="lactose-free-title">
+      <div class="container">
+        <div class="flavors-menu-heading text-center">
+          <h2 id="lactose-free-title">Sabores sin lactosa</h2>
+          <p>Opciones frescas y cremosas para disfrutar helado sin lactosa.</p>
+        </div>
+        <div class="products-sortbar">
+          <label for="sort-lactose-free">Ordenar sin lactosa</label>
+          <select class="form-select" id="sort-lactose-free" data-sort-control="lactose-free">
+            <option value="default">Orden original</option>
+            <option value="asc">Precio: menor a mayor</option>
+            <option value="desc">Precio: mayor a menor</option>
+          </select>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" data-sort-grid="lactose-free">
+          <div class="col">
+            <article class="flavor-menu-card">
+              <img src="../img/productos/Dulce De leche de soja.avif" alt="Helado sin lactosa de dulce de leche de soja">
+              <div>
+                <h3>Dulce de leche de soja</h3>
+                <p>Sabor suave y dulce preparado con base de soja.</p>
+                <span>$2.500 COP</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="flavor-menu-card">
+              <img src="../img/productos/Sorbete de mora.avif" alt="Sorbete sin lactosa de mora">
+              <div>
+                <h3>Sorbete de mora</h3>
+                <p>Opción frutal, refrescante y ligera con sabor a mora.</p>
+                <span>$2.000 COP</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="flavor-menu-card">
+              <img src="../img/productos/Banan y miel.avif" alt="Helado sin lactosa de banana y miel">
+              <div>
+                <h3>Banana y miel</h3>
+                <p>Mezcla cremosa con dulzor natural y aroma tropical.</p>
+                <span>$2.500 COP</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="flavor-menu-card">
+              <img src="../img/productos/Fresa y coco.avif" alt="Helado sin lactosa de fresa y coco">
+              <div>
+                <h3>Fresa y coco</h3>
+                <p>Combinación tropical con fresa dulce y coco suave.</p>
+                <span>$2.500 COP</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="flavor-menu-card">
+              <img src="../img/productos/Sorbete de frambuesa.avif" alt="Sorbete sin lactosa de frambuesa">
+              <div>
+                <h3>Sorbete de frambuesa</h3>
+                <p>Sabor ácido, dulce y refrescante para días calurosos.</p>
+                <span>$2.000 COP</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="flavor-menu-card">
+              <img src="../img/productos/SORBETE DE LIMON.avif" alt="Sorbete sin lactosa de limón">
+              <div>
+                <h3>Sorbete de limón</h3>
+                <p>Helado ligero con sabor cítrico y acabado fresco.</p>
+                <span>$2.000 COP</span>
+              </div>
+            </article>
           </div>
         </div>
       </div>
@@ -100,7 +369,30 @@
     </div>
   </footer>
 
+  <div class="modal fade product-detail-modal" id="productDetailModal" tabindex="-1" aria-labelledby="productDetailTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="productDetailTitle">Detalle del producto</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="product-detail-layout">
+            <img id="productDetailImage" src="../img/productos/Banana Split.webp" alt="">
+            <div class="product-detail-copy">
+              <p id="productDetailDescription"></p>
+              <h3>Ingredientes</h3>
+              <p id="productDetailIngredients"></p>
+              <strong id="productDetailPrice"></strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/filtros.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>
