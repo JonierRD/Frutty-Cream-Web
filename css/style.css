@@ -45,3 +45,317 @@ input:focus, textarea:focus {
   box-shadow: 0 0 8px rgba(255,77,109,0.4);
   transition: 0.3s ease;
 }
+
+.products-hero {
+  min-height: calc(100vh - var(--top-strip-height, 3.75rem));
+  display: flex;
+  align-items: center;
+  background: #b8ead8;
+}
+
+.site-page[data-page='productos'] .site-header--page {
+  background: #b8ead8;
+}
+
+.products-hero .container {
+  display: grid;
+  place-items: center;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.products-hero-copy {
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.products-hero-copy span {
+  display: block;
+  margin-bottom: .45rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(1.6rem, 5vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.products-hero-copy h1 {
+  margin: 0;
+  font-size: clamp(4rem, 15vw, 10rem);
+  font-weight: 900;
+  line-height: .9;
+  letter-spacing: .08em;
+}
+
+.products-hero-copy p {
+  margin: .8rem 0 0;
+  font-family: 'Pacifico', cursive;
+  font-size: clamp(1.6rem, 5vw, 3.4rem);
+  line-height: 1;
+  text-transform: none;
+}
+
+.products-catalog {
+  background: #fffaf7;
+}
+
+.products-catalog-heading {
+  max-width: 42rem;
+  margin: 0 auto 2.5rem;
+}
+
+.products-catalog-heading span {
+  display: inline-block;
+  margin-bottom: .55rem;
+  font-family: 'Pacifico', cursive;
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  color: #ff5b7d;
+}
+
+.products-catalog-heading h2 {
+  margin: 0;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 900;
+}
+
+.products-sortbar {
+  width: min(100%, 24rem);
+  display: grid;
+  gap: .45rem;
+  margin: 0 auto 2rem;
+}
+
+.products-sortbar label {
+  color: #343846;
+  font-family: 'Oswald', sans-serif;
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.products-sortbar .form-select {
+  border: 2px solid #111;
+  border-radius: 0;
+  padding: .75rem 1rem;
+  color: #111;
+  font-weight: 700;
+  box-shadow: none;
+}
+
+.products-sortbar .form-select:focus {
+  border-color: rgb(0 168 255 / 96%);
+  box-shadow: 0 0 0 .18rem rgb(0 168 255 / 18%);
+}
+
+.product-menu-card {
+  overflow: hidden;
+  border: 1px solid rgba(31, 35, 48, .1);
+  border-radius: .75rem;
+  background: #fff;
+}
+
+.product-menu-card img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.product-menu-card .card-body {
+  display: flex;
+  min-height: 13rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.product-menu-card .card-title {
+  margin-bottom: .75rem;
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.product-menu-card .card-text {
+  color: #4f5567;
+  line-height: 1.55;
+}
+
+.product-price {
+  margin: auto 0 0;
+  padding-top: 1rem;
+  color: #111;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.icecream-flavors {
+  background: #fff;
+}
+
+.lactose-free-flavors {
+  background: #fbfffd;
+}
+
+.flavors-menu-heading {
+  max-width: 48rem;
+  margin: 0 auto 2.5rem;
+}
+
+.flavors-menu-heading h2 {
+  margin-bottom: .8rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.flavors-menu-heading p {
+  margin: 0;
+  color: #343846;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.flavor-menu-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  align-items: center;
+  padding: .5rem 1rem 1.4rem;
+  text-align: center;
+}
+
+.flavor-menu-card > div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flavor-menu-card img {
+  width: min(100%, 20rem);
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.flavor-menu-card h3 {
+  margin: 0 0 .75rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.flavor-menu-card p {
+  max-width: 22rem;
+  margin: 0 auto .9rem;
+  color: #3f4554;
+  flex: 1;
+  line-height: 1.55;
+}
+
+.flavor-menu-card span {
+  display: block;
+  color: #111;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.product-detail-button {
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 1rem;
+  border: 2px solid #111;
+  border-radius: 0;
+  background: #111;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.product-detail-button:hover {
+  border-color: #111;
+  background: #fff;
+  color: #111;
+}
+
+.product-detail-modal .modal-content {
+  border: 0;
+  border-radius: .85rem;
+  overflow: hidden;
+}
+
+.product-detail-modal .modal-header {
+  position: relative;
+  justify-content: center;
+  border-bottom: 1px solid rgba(31, 35, 48, .1);
+}
+
+.product-detail-modal .modal-title {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 0 2.5rem;
+  text-align: center;
+}
+
+.product-detail-modal .btn-close {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+}
+
+.product-detail-layout {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.product-detail-layout img {
+  width: 100%;
+  max-height: 22rem;
+  object-fit: contain;
+  background: #fffaf7;
+}
+
+.product-detail-copy h3 {
+  margin: 1rem 0 .35rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.product-detail-copy p {
+  color: #4f5567;
+  line-height: 1.6;
+}
+
+.product-detail-copy strong {
+  display: inline-block;
+  color: #111;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.35rem;
+}
+
+@media (min-width: 768px) {
+  .products-hero {
+    min-height: calc(100vh - var(--top-strip-height, 3.75rem));
+  }
+
+  .product-detail-layout {
+    grid-template-columns: .95fr 1.05fr;
+    align-items: center;
+  }
+}
