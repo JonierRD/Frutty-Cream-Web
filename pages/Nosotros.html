@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/responsive.css">
 </head>
@@ -44,11 +45,45 @@
 	</header>
 
 	<main>
-		<section class="page-hero section-pad">
+		<section class="about-hero" aria-labelledby="about-title">
 			<div class="container">
-				<span class="eyebrow">Página base</span>
-				<h1 class="section-title">Sección reservada para el módulo de contenido de tu compañero.</h1>
-				<p class="page-intro">Aquí solo queda la estructura compartida para mantener navegación, encabezado y pie de página consistentes.</p>
+				<div class="about-hero-copy">
+					<span>Sobre</span>
+					<h1 id="about-title">Frutty Cream</h1>
+				</div>
+			</div>
+		</section>
+
+		<section class="about-place section-pad" aria-labelledby="about-place-title">
+			<div class="container">
+				<div class="about-place-copy">
+					<h2 id="about-place-title">Nuestro lugar</h2>
+					<p class="about-place-tagline">¡Nos apasiona el helado!</p>
+					<p>Frutty Cream es una heladería ubicada en Mocoa, Putumayo, creada para compartir momentos dulces con familias, amigos y visitantes que buscan sabores frescos, cremosos y preparados con cariño.</p>
+					<p>En nuestro local encuentras helados artesanales, copas especiales, malteadas, postres fríos y opciones para distintos gustos. Cada producto está pensado para que la experiencia sea cercana, alegre y llena de sabor.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="about-photo" aria-label="Conos de helado Frutty Cream">
+			<img src="../img/Galeria3.jpg" alt="Conos de helado de Frutty Cream en vitrina">
+		</section>
+
+		<section class="about-location section-pad" aria-labelledby="about-location-title">
+			<div class="container">
+				<div class="about-location-heading">
+					<h2 id="about-location-title">Ubicación</h2>
+					<p>Visítanos en Mocoa, Putumayo, y disfruta tus sabores favoritos en Frutty Cream.</p>
+				</div>
+				<div class="about-location-layout">
+					<div class="about-location-info">
+						<span>Frutty Cream</span>
+						<h3>B/ La Independencia</h3>
+						<p>Mocoa, Putumayo, Colombia</p>
+						<a class="btn about-location-button" href="https://www.google.com/maps/search/?api=1&query=Barrio%20La%20Independencia%20Mocoa%20Putumayo%20Colombia" target="_blank" rel="noopener">Ver en Google Maps</a>
+					</div>
+					<div class="about-map" id="aboutMap" role="img" aria-label="Mapa de la ubicación de Frutty Cream en Mocoa"></div>
+				</div>
 			</div>
 		</section>
 	</main>
@@ -63,6 +98,8 @@
 	</footer>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script src="../js/api.js"></script>
 	<script src="../js/main.js"></script>
 </body>
 </html>
