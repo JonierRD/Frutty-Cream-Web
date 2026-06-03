@@ -42,11 +42,78 @@
 	</header>
 
 	<main>
-		<section class="page-hero section-pad">
+		<section class="promotions-hero" aria-labelledby="promotions-title">
 			<div class="container">
-				<span class="eyebrow">Página base</span>
-				<h1 class="section-title">Sección reservada para promociones y clima del equipo.</h1>
-				<p class="page-intro">La estructura ya está lista; el contenido dinámico lo integrará el responsable del módulo.</p>
+				<h1 id="promotions-title">Promociones</h1>
+			</div>
+		</section>
+
+		<section class="promotions-section section-pad" aria-labelledby="promotions-list-title">
+			<div class="container">
+				<div class="promotions-heading text-center">
+					<span>Ofertas dulces</span>
+					<h2 id="promotions-list-title">Elige tus promociones favoritas</h2>
+					<p>Marca las ofertas que más te gusten y las recordaremos cuando vuelvas a visitar la página.</p>
+				</div>
+
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+					<div class="col">
+						<article class="promotion-card h-100" data-favorite-item="Promo 6x5 bombones">
+							<img src="../img/Prom1.webp" alt="Promoción de bombones helados de chocolate">
+							<div class="promotion-card-overlay">
+								<span>Promo 6×5</span>
+								<p>Comprando 5 bombones escoges y te llevas 6.</p>
+							</div>
+						</article>
+					</div>
+					<div class="col">
+						<article class="promotion-card h-100" data-favorite-item="Promo 6x5 paletas">
+							<img src="../img/prom2.jpg" alt="Promoción de paletas heladas cubiertas de chocolate">
+							<div class="promotion-card-overlay">
+								<span>Promo 6×5</span>
+								<p>Comprando 5 paletas heladas te llevas 6.</p>
+							</div>
+						</article>
+					</div>
+					<div class="col">
+						<article class="promotion-card h-100" data-favorite-item="Promo 10x8 alfajores">
+							<img src="../img/prom3.jpg" alt="Promoción de alfajores helados de chocolate">
+							<div class="promotion-card-overlay">
+								<span>Promo 10×8</span>
+								<p>Comprando 8 alfajores helados te llevas 10.</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="favorite-flavor section-pad" aria-labelledby="favorite-flavor-title">
+			<div class="container">
+				<div class="favorite-flavor-panel">
+					<div>
+						<span>Tu elección</span>
+						<h2 id="favorite-flavor-title">Sabor favorito</h2>
+						<p>Selecciona el sabor que más te gusta. Guardaremos tu preferencia en este navegador.</p>
+					</div>
+					<form class="favorite-flavor-form" id="favoriteFlavorForm">
+						<label for="favoriteFlavor">Elige un sabor</label>
+						<select class="form-select" id="favoriteFlavor" required>
+							<option value="">Selecciona una opción</option>
+							<option>Fresa</option>
+							<option>Chocolate</option>
+							<option>Vainilla</option>
+							<option>Oreo</option>
+							<option>Mora</option>
+							<option>Coco</option>
+						</select>
+						<div class="favorite-flavor-actions">
+							<button class="btn favorite-save" type="submit">Guardar sabor</button>
+							<button class="btn favorite-clear" type="button" id="clearFavoriteFlavor">Limpiar</button>
+						</div>
+						<p class="favorite-status" id="favoriteFlavorStatus" aria-live="polite"></p>
+					</form>
+				</div>
 			</div>
 		</section>
 	</main>
@@ -61,6 +128,7 @@
 	</footer>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="../js/storage.js"></script>
 	<script src="../js/main.js"></script>
 </body>
 </html>
