@@ -524,12 +524,13 @@ input:focus, textarea:focus {
 }
 
 .promotions-hero h1 {
+  max-width: 100%;
   margin: 0;
   color: #fff;
   font-family: 'Oswald', sans-serif;
-  font-size: clamp(3.2rem, 10vw, 8rem);
+  font-size: clamp(2rem, 10vw, 8rem);
   font-weight: 700;
-  letter-spacing: .18em;
+  letter-spacing: clamp(.02em, 1vw, .18em);
   line-height: .95;
   text-align: center;
   text-transform: uppercase;
