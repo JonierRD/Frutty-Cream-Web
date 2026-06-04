@@ -3,7 +3,7 @@
 @import url('./home.css');
 @import url('./footer.css');
 
-/* Animación hover en las tarjetas */
+
 .producto-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -12,7 +12,7 @@
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* Animación para inputs */
+
 input:focus, textarea:focus {
   border-color: #ff4d6d;
   box-shadow: 0 0 8px rgba(255,77,109,0.4);
